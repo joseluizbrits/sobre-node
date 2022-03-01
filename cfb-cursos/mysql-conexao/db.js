@@ -2,7 +2,7 @@ const conectar = async () => {
     if (global.conexao && global.conexao.state !== 'disconected')
         return global.conexao
     const mysql = require('mysql2/promise')
-    const con = mysql.createConnection("mysql://root:2195992705@localhost:3306/db1")
+    const con = mysql.createConnection("mysql://root:<senha>@localhost:3306/db1")
     console.log('Conectou ao banco')
     global.conexao = con
     return con
